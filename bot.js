@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 const fs = require('fs')
 const client = new Discord.Client();
-const config = require("./config.json")
+//const config = require("./config.json")
 
 // startup
 client.on('ready', () => {
@@ -9,27 +9,27 @@ client.on('ready', () => {
 	client.user.setActivity(';help')
 });
 
-client.login(token);
+client.login("NTU2NTcwMjA0NDQ1MDgxNjIz.Xdogiw.UyOfIhcWku9bw3Fai7Vd4rj5eQc");
 
 //on join
 client.on("guildCreate", guild => {
 	console.log('Joined: ${guild.name} (id: ${guild.id}');
-}
+});
 
 //on delete
 client.on("guildDelete", guild => {
 	console.log('Removed: ${guild.name} (id: ${guild.id}');
-}
+});
 
 // command code below
 client.on('message', msg => {
 	//lol
-	if(msg.toLowerCase() == 'whatever dude') {
+	if(msg == 'whatever dude') {
 			msg.channel.send('I\'m over it')
 		}
 		
 	//real commands
-	if(msg.content.substring(0,1) == prefix){
+	if(msg.content.substring(0,1) == ";"){
 		var args = msg.content.substring(1).split(' ');
 		var cmd = args[0];
 		args = args.splice(1);

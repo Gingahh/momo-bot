@@ -1,7 +1,7 @@
 {
   "name": "test-bot",
   "version": "1.0.0",
-  "description": "learning discord bot shit",
+  "description": ":)",
   "main": "bot.js",
   "author": "Gingah#6972",
   "dependencies": {
