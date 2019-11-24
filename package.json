@@ -1,0 +1,12 @@
+{
+  "name": "test-bot",
+  "version": "1.0.0",
+  "description": "learning discord bot shit",
+  "main": "bot.js",
+  "author": "Gingah#6972",
+  "dependencies": {
+    "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
+    "discord.js": "^11.4.2",
+    "winston": "^3.2.1"
+  }
+}
